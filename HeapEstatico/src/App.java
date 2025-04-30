@@ -34,5 +34,11 @@ public class App {public static void main(String[] args) {
 
         System.out.println("Tamaño actual del heap: " + heap.dimension());
         System.out.println("¿Heap vacío? " + heap.heapVacio());
+
+        MetodosHeap metodos = new MetodosHeap();
+        metodos.EliminarMayoresaX(((HeapEstatico)heap).heap, heap.dimension(), 30);
+        System.out.print("Contenido del heap: ");
+        heap.imprimirHeap();
     }
+
 }

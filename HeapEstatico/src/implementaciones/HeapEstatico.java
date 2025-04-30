@@ -3,7 +3,7 @@ package implementaciones;
 import interfaces.HeapTDA;
 
 public class HeapEstatico implements HeapTDA {
-    int[] heap;
+    public int[] heap;
     int tamaño;
 
     public void inicializar(){
@@ -89,7 +89,9 @@ public class HeapEstatico implements HeapTDA {
 
     public void imprimirHeap() {
         for (int i = 0; i < tamaño; i++) {
+            if (heap[i] != 0){
             System.out.print(heap[i] + " ");
+            }
         }
         System.out.println();
     }
