@@ -86,11 +86,5 @@ public class HeapEstatico implements HeapTDA {
     public int dimension() {
         return tamaño;
     }
-    // Método auxiliar opcional: imprimir el heap
-    public void imprimirHeap() {
-        for (int i = 0; i < tamaño; i++) {
-            System.out.print(heap[i] + " ");
-        }
-        System.out.println();
-    }
+
 }
