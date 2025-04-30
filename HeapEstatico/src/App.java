@@ -1,5 +1,6 @@
 import implementaciones.HeapEstatico;
 import interfaces.HeapTDA;
+import metodos.MetodosHeap;
 
 public class App {public static void main(String[] args) {
         // Crear e inicializar el heap
@@ -20,7 +21,8 @@ public class App {public static void main(String[] args) {
 
         // Imprimir heap
         System.out.print("Contenido del heap: ");
-        ((HeapEstatico) heap).imprimirHeap(); // usamos cast para acceder al método extra
+        heap.imprimirHeap(heap,heap.dimension());
+        
 
         // Eliminar un elemento
         System.out.println("Eliminando 30...");
@@ -28,7 +30,7 @@ public class App {public static void main(String[] args) {
 
         // Estado final
         System.out.print("Heap después de eliminar 30: ");
-        ((HeapEstatico) heap).imprimirHeap();
+        heap.imprimirHeap();	
 
         System.out.println("Tamaño actual del heap: " + heap.dimension());
         System.out.println("¿Heap vacío? " + heap.heapVacio());
