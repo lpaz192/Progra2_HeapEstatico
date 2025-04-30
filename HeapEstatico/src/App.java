@@ -21,7 +21,7 @@ public class App {public static void main(String[] args) {
 
         // Imprimir heap
         System.out.print("Contenido del heap: ");
-        heap.imprimirHeap(heap,heap.dimension());
+        heap.imprimirHeap();
         
 
         // Eliminar un elemento
